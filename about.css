@@ -1,0 +1,94 @@
+body {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: 'Tektur', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            font-size: 4em;
+            padding: 40px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            border-radius: 20px;
+            width: 85%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(12px);
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+            backdrop-filter: blur(10px);
+        }
+
+        section:hover {
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.731);
+            transform: scale(1.05);
+        }
+
+        section h1 {
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            color: #ccc;
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: #ccc;
+            padding: 20px 0;
+            background-color: #000;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        /* Hover animation for glowing borders */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(255,0,0,0.3); }
+            50% { box-shadow: 0 0 25px rgba(255,0,0,0.7); }
+            100% { box-shadow: 0 0 5px rgba(255,0,0,0.3); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2.5em;
+            }
+
+            section {
+                padding: 25px;
+            }
+
+            section h1 {
+                font-size: 1.6em;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+        }
